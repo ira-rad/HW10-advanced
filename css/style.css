@@ -1,0 +1,77 @@
+body{
+  background: url(../img/621577671.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  
+}
+.title{
+font-weight: 500;
+font-size: 40px;
+padding-top: 20px;
+margin-top: 30px;
+}
+
+.buttons{
+ 
+  display: flex;
+  max-width:  900px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.btn{
+background: transparent;
+border: 3px solid rgb(32, 30, 30);
+  height: 80px;
+  width: 80px;
+  font-weight: 500;
+  font-size: 30px;
+  box-shadow: inset 5px 5px 35px 20px #FFFFFF;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn:active{
+  box-shadow: inset 5px 5px 27px 14px #FFFFFF;
+  opacity: 80%;
+}
+
+@media (max-width: 960px) {
+.buttons{
+  margin-top: 80px;
+  max-width: 600px;
+}
+.btn{
+  height: 50px;
+  width: 50px;
+}
+}
+
+@media (max-width: 650px) {
+  body{
+    background-size: auto;
+  
+  }
+  .buttons{
+    margin-top: 80px;
+    max-width: 400px;
+  }
+
+  }
+
+  @media (max-width: 450px) {
+    .buttons{
+      flex-wrap: wrap; 
+      max-width: 200px;  
+    }
+    .btn{
+      margin: 0px 0px 10px 10px;
+    }
+    .title{
+      color: lavender;
+    }
+  }
