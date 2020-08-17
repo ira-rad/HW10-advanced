@@ -1,4 +1,3 @@
-
 document.getElementById("buttonQ").onclick = function () {
   document.getElementById("audioQ").play();
 };
@@ -19,17 +18,17 @@ document.getElementById("buttonY").onclick = function () {
 };
 
 document.addEventListener("keydown", function (e) {
-  if (e.keyCode == 81) {
-    document.getElementById("audioQ").play();
-  } else if (e.keyCode == 87) {
-    document.getElementById("audioW").play();
-  } else if (e.keyCode == 69) {
-    document.getElementById("audioE").play();
-  } else if (e.keyCode == 82) {
-    document.getElementById("audioR").play();
-  } else if (e.keyCode == 84) {
-    document.getElementById("audioT").play();
-  } else if (e.keyCode == 89) {
-    document.getElementById("audioY").play();
-  }
+  return e.keyCode == 81
+    ? document.getElementById("audioQ").play()
+    : e.keyCode == 87
+    ? document.getElementById("audioW").play()
+    : e.keyCode == 69
+    ? document.getElementById("audioE").play()
+    : e.keyCode == 82
+    ? document.getElementById("audioR").play()
+    : e.keyCode == 84
+    ? document.getElementById("audioT").play()
+    : e.keyCode == 89
+    ? document.getElementById("audioY").play()
+    : document.getElementById('')
 });
