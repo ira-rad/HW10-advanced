@@ -1,34 +1,41 @@
-document.getElementById("buttonQ").onclick = function () {
-  document.getElementById("audioQ").play();
-};
-document.getElementById("buttonW").onclick = function () {
-  document.getElementById("audioW").play();
-};
-document.getElementById("buttonE").onclick = function () {
-  document.getElementById("audioE").play();
-};
-document.getElementById("buttonR").onclick = function () {
-  document.getElementById("audioR").play();
-};
-document.getElementById("buttonT").onclick = function () {
-  document.getElementById("audioT").play();
-};
-document.getElementById("buttonY").onclick = function () {
-  document.getElementById("audioY").play();
-};
+function getAudio(source){
+  let audio = new Audio();
+	audio.src = source;
+	audio.play();
+}
+
+document.getElementById("buttonQ").addEventListener('click', () => {
+  getAudio('audio/11.mp3')
+});
+document.getElementById("buttonW").addEventListener('click', () => {
+  getAudio('audio/22.mp3')
+});
+document.getElementById("buttonE").addEventListener('click', () => {
+  getAudio('audio/33.mp3')
+});
+document.getElementById("buttonR").addEventListener('click', () => {
+  getAudio('audio/44.mp3')
+});
+document.getElementById("buttonT").addEventListener('click', () => {
+  getAudio('audio/55.mp3')
+});
+document.getElementById("buttonY").addEventListener('click', () => {
+  getAudio('audio/66.mp3')
+});
 
 document.addEventListener("keydown", function (e) {
-  return e.keyCode == 81
-    ? document.getElementById("audioQ").play()
+  return e.keyCode == 81 
+    ? getAudio('audio/11.mp3')
     : e.keyCode == 87
-    ? document.getElementById("audioW").play()
+    ? getAudio('audio/22.mp3')
     : e.keyCode == 69
-    ? document.getElementById("audioE").play()
+    ? getAudio('audio/33.mp3')
     : e.keyCode == 82
-    ? document.getElementById("audioR").play()
+    ? getAudio('audio/44.mp3')
     : e.keyCode == 84
-    ? document.getElementById("audioT").play()
+    ? getAudio('audio/55.mp3')
     : e.keyCode == 89
-    ? document.getElementById("audioY").play()
+    ? getAudio('audio/66.mp3')
     : document.getElementById('')
 });
+ 
