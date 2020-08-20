@@ -1,9 +1,11 @@
 body{
   background: url(../img/621577671.jpg);
   background-repeat: no-repeat;
-  background-size: 100%, 100%;
+  background-size: 100% 100%;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
   
 }
 .title{
